@@ -1,8 +1,10 @@
 import styled from "styled-components"; 
-import { colors, sizes } from '../../utils/constants';
+import { sizes } from '../../utils/constants';
 
 export const StyledButton = styled.button`
-	backgroundColor: ${props.buttonColor => props.buttonColor};
-	color: ${props.textColor => props.textColor ?  props.textColor : colors.white};
+	background-color: ${props => props.buttonColor};
+	color: ${props => props.textColor};
 	padding: ${sizes.xsmall} ${sizes.small};
+	border: 0;
+	border-radius: ${sizes.xsmall};
 `;

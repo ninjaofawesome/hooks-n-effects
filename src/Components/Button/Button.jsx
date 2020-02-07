@@ -9,19 +9,23 @@ const Button = props => {
 	return (
 		<StyledButton
 			textColor={props.textColor ? props.textColor : ''}
-			buttonColor={props.color}
-			onclick={props.onClick}
+			buttonColor={props.buttonColor}
+			onClick={props.onClick}
 		>{props.text}</StyledButton>
 	);
-};
+}
 
 Button.propTypes ={
 	onClick: PropTypes.func,
 	text: PropTypes.string,
+	textColor: PropTypes.string,
+	buttonColor: PropTypes.string,
 };
 
 Button.defaultProps = {
-	onClick: () => {};
+	onClick: () => {},
+	textColor: '#ffffff',
+	buttonColor: '#141414',
 	text: '',
 };
 
