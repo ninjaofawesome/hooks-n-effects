@@ -8,7 +8,7 @@ export const sizes = {
 
 // roughly modeled around the iphone sizes, but more could be added here.
 export const breakpoints = {
-	mobile: '375px';
+	mobile: '375px',
 	mobileLandscape: '768px',
 	tablet: '768px',
 	tabletLandscape: '1024px',
