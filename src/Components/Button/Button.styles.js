@@ -1,5 +1,5 @@
 import styled from "styled-components"; 
-import { darken } from 'polished'
+import { darken } from 'polished';
 import { sizes } from '../../utils/constants';
 
 export const StyledButton = styled.button`
