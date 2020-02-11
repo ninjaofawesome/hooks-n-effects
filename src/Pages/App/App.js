@@ -1,11 +1,11 @@
 import React from 'react';
-import Button from './Components/Button/Button';
-import CodeBlock from './Components/CodeBlock/CodeBlock';
-import { colors } from './utils/constants';
-import './App.css';
+import Button from '../../Components/Button/Button';
+import CodeBlock from '../../Components/CodeBlock/CodeBlock';
+import { colors } from '../../utils/constants';
+import { AppWrapper } from './App.styles.js';
 
 const App = () => (
-    <div className="App">
+    <AppWrapper>
       <h1>Hooks n' Effects</h1>
       <CodeBlock>
         <Button 
@@ -15,7 +15,7 @@ const App = () => (
           text="hello world"
         / >  
       </CodeBlock>
-    </div>
+    </AppWrapper>
 );
 
 export default App;
