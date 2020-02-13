@@ -9,6 +9,8 @@ export const StyledButton = styled.button`
 	border: 0;
 	border-radius: ${sizes.xsmall};
   	transition: 0.3s;
+  	display: block;
+  	margin: 0 auto;
 
 	&:hover {
 		background-color: ${props => darken(0.2, props.buttonColor)};
