@@ -1,5 +1,9 @@
 import styled from "styled-components";
-import { colors, sizes } from '../../utils/constants'; 
+import { 
+	colors, 
+	sizes,
+	device,  
+} from '../../utils/constants'; 
 
 export const CodeBlockWrapper = styled.pre`
 	display: block;
@@ -15,6 +19,22 @@ export const CodeBlockCode = styled.code`
 	border-radius: ${sizes.xsmall}
 	overflow: hidden;
 	overflow-x: auto;
+	@media ${device.desktopL} {
+	  width: 750px;
+	}
+	@media ${device.desktop} {
+	  width: 750px;
+	}
+	@media ${device.laptopL} { 
+	  width: 600px;
+	}
 
+	@media ${device.laptop} { 
+	  width: 500px;
+	}
+
+	@media ${device.tablet} { 
+	  width: 450px;
+	}
 `;
 
