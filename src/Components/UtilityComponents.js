@@ -1,5 +1,5 @@
 import styled from "styled-components"; 
-import {sizes} from "../utils/constants";
+import { sizes, device } from "../utils/constants";
 
 // by no means exhaustive.  Add more as necessary.
 
@@ -10,7 +10,7 @@ export const Paragraph = styled.p`
 export const Wrapper = styled.div`
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	justify-content: center;
 	align-items: flex-start;
 	width: 100%;
 	height: auto;
@@ -21,7 +21,26 @@ export const Container = styled.div`
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: flex-start;
-	width: 300px;
+	width: auto;
+	max-width: 300px;
+	padding: 0 ${sizes.medium};
+	@media ${device.desktopL} {
+	  max-width: 750px;
+	}
+	@media ${device.desktop} {
+	  max-width: 750px;
+	}
+	@media ${device.laptopL} { 
+	  max-width: 600px;
+	}
+
+	@media ${device.laptop} { 
+	  max-width: 500px;
+	}
+
+	@media ${device.tablet} { 
+	  max-width: 450px;
+	}
 `;
 
 export const List = styled.ul`
