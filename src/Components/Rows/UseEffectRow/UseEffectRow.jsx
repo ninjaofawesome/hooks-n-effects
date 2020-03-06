@@ -1,5 +1,6 @@
 import React from 'react';
 import CodeBlock from '../../CodeBlock/CodeBlock';
+import UseEffectList from '../../UseEffectList/UseEffectList';
 import {
     Header2, 
     Wrapper,
@@ -15,6 +16,7 @@ const UseEffectRow = () => (
 		    <Container>
 		        <Header2 paraColor={colors.black}>useEffect Example:  A fetched list.</Header2>
 		        <Paragraph>This is an example of fetching data with the useEffect hook.</Paragraph>
+		        <UseEffectList />
 		    </Container>
 		    <Container>
 		        <Paragraph>Here's how it works under the hood.</Paragraph>
