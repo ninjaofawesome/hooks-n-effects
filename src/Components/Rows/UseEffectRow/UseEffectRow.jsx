@@ -1,6 +1,7 @@
 import React from 'react';
 import CodeBlock from '../../CodeBlock/CodeBlock';
 import UseEffectList from '../../UseEffectList/UseEffectList';
+import FetchStateList from '../../FetchStateList/FetchStateList';
 import {
     Header2, 
     Wrapper,
@@ -31,6 +32,7 @@ const UseEffectRow = () => (
 		    <Container>
 		        <Header2 paraColor={colors.black}>Old School Example:  Fetched List.</Header2>
 		        <Paragraph>This is an example of how you would do the same thing, but without the useEffect hook.</Paragraph>
+		        <FetchStateList />
 		    </Container>
 		    <Container>
 		        <Paragraph>Here's how it works under the hood.</Paragraph>
