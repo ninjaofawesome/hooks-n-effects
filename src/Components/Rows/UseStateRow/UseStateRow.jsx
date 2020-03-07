@@ -3,7 +3,6 @@ import CodeBlock from '../../CodeBlock/CodeBlock';
 import UseStateButton from '../../UseStateButton/UseStateButton';
 import StatefulButton from '../../StatefulButton/StatefulButton';
 import {
-    Header1,
     Header2, 
     Wrapper,
     Container, 
