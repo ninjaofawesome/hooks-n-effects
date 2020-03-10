@@ -14,13 +14,14 @@ import { colors } from '../../../utils/constants';
 const UseEffectRow = () => (
 	<UseEffectWrapper>
 		<Wrapper>
+			<Header2 paraColor={colors.black}>useEffect Example:  A fetched bit of data.</Header2>
+		</Wrapper>
+		<Wrapper>
 		    <Container>
-		        <Header2 paraColor={colors.black}>useEffect Example:  A fetched list.</Header2>
 		        <Paragraph>This is an example of fetching data with the useEffect hook.  In this case, the listData is being set with the effect setListData which is equivalent to the this setState function.</Paragraph>
 		        <UseEffectList />
 		    </Container>
 		    <Container>
-		        <Paragraph>Here's how it works under the hood.</Paragraph>
 		        <CodeBlock 
 		            children={`
 		            	const UseEffectList = () => {
@@ -43,13 +44,14 @@ const UseEffectRow = () => (
 		    </Container>
 		</Wrapper>
 		<Wrapper>
+			<Wrapper>
+				<Header2 paraColor={colors.black}>Old School Example:  Fetched data.</Header2>
+			</Wrapper>
 		    <Container>
-		        <Header2 paraColor={colors.black}>Old School Example:  Fetched List.</Header2>
 		        <Paragraph>This is an example of how you would do the same thing, but without the useEffect hook. As mentioned above, this uses the setState function, once the data has been fetched on mount.  To also account for an empty state, another method was added for a loading state as the data will not render until the components are fetched.</Paragraph>
 		        <FetchStateList />
 		    </Container>
 		    <Container>
-		        <Paragraph>Here's how it works under the hood.</Paragraph>
 		        <CodeBlock 
 		            children={`
 			            class FetchStateList extends Component {

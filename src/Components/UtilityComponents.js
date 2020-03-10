@@ -56,24 +56,42 @@ export const ListItem = styled.li`
 
 export const Header1 = styled.h1`
 	color: ${props => props.paraColor};
+	font-size: ${props => props.fontSize};
+	margin: 0;
+	padding: 0;
 `;
 
 export const Header2 = styled.h2`
 	color: ${props => props.paraColor};
+	font-size: ${props => props.fontSize};
+	margin: 0;
+	padding: 0;
 `;
 
 export const Header3 = styled.h3`
 	color: ${props => props.paraColor};
+	font-size: ${props => props.fontSize};
+	margin: 0;
+	padding: 0;
 `;
 
 export const Header4 = styled.h4`
 	color: ${props => props.paraColor};
+	font-size: ${props => props.fontSize};
+	margin: 0;
+	padding: 0;
 `;
 
 export const Header5 = styled.h5`
 	color: ${props => props.paraColor};
+	font-size: ${props => props.fontSize};
+	margin: 0;
+	padding: 0;
 `;
 
 export const Header6 = styled.h6`
 	color: ${props => props.paraColor};
+	font-size: ${props => props.fontSize};
+	margin: 0;
+	padding: 0;
 `;

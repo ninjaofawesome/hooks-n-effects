@@ -14,13 +14,14 @@ import { colors } from '../../../utils/constants';
 const UseStateRow = () => (
 	<UseStateWrapper>
 		<Wrapper>
+			<Header2 paraColor={colors.black}>useState Example:  Button State.</Header2>
+		</Wrapper>
+		<Wrapper>
 		    <Container>
-		        <Header2 paraColor={colors.black}>useState Example:  Button State.</Header2>
 		        <Paragraph>This is an example of a button that uses the useState hook.  It serves the same purpose as setState to store state locally.  Try it yourself by clicking the button!</Paragraph>
 		        <UseStateButton />
 		    </Container>
 		    <Container>
-		        <Paragraph>Here's how it works under the hood.</Paragraph>
 		        <CodeBlock 
 		            children={`
 		                /* useState is the equivalent of setting the state in a class.  It stores state within the component. */
@@ -41,13 +42,14 @@ const UseStateRow = () => (
 		    </Container>
 		</Wrapper>
 		<Wrapper>
+			<Wrapper>
+				<Header2 paraColor={colors.black}>Local State Example:  Button State.</Header2>
+			</Wrapper>
 		    <Container>
-		        <Header2 paraColor={colors.black}>Local State Example:  Button State.</Header2>
 		        <Paragraph>This is an example of a button that uses the state locally, for reference.  On click, the state is set in the constructor.  Click the button and see how it works! </Paragraph>
 		        <StatefulButton />
 		    </Container>
 		    <Container>
-		        <Paragraph>Here's how it works under the hood.</Paragraph>
 		        <CodeBlock 
 		            children={`
 		                /* This is the exact same thing as shown above with useState.  On click the copy will be set to the new string. */
