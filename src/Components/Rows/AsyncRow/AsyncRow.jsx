@@ -12,8 +12,10 @@ import { colors } from '../../../utils/constants';
 const AsyncRow = () => (
 	<AsyncRowWrapper>
 		<Wrapper>
+			<Header2 paraColor={colors.black}>One more thing on useEffect and Async operations.</Header2>
+		</Wrapper>
+		<Wrapper>
 		    <Container>
-		        <Header2 paraColor={colors.black}>One more thing on useEffect and Async operations.</Header2>
 		        <Paragraph>You cannot return a promise using an effect, only a function.  So with asynchronous actions, which always return a promise, the code will have to be refactored.  In the fetch example from above, here's how that might look.</Paragraph>
 		    </Container>
 		    <Container>

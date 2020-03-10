@@ -1,4 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import {
+    Header3,
+    Paragraph,  
+} from '../UtilityComponents';
+import { colors } from '../../utils/constants';
 
 const UseEffect = () => {
 	const [listData, setListData] = useState([]);
@@ -12,7 +17,10 @@ const UseEffect = () => {
 
 	const data = [listData];
 	return (
-		<div>{data[0].slip !== undefined ? data[0].slip.advice : ''}</div>
+		<div>
+			<Header3 paraColor={colors.black}>Example of local state</Header3>
+			<Paragraph>{data[0].slip !== undefined ? data[0].slip.advice : ''}</Paragraph>
+		</div>
 	);
 };
 

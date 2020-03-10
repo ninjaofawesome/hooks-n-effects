@@ -1,4 +1,9 @@
 import React, { Component } from 'react';
+import {
+    Header3,
+    Paragraph,  
+} from '../UtilityComponents';
+import { colors } from '../../utils/constants';
 
 class FetchStateList extends Component {
 	constructor() {
@@ -23,7 +28,10 @@ class FetchStateList extends Component {
 
 	render() {		
 		return (
-			<div>{this.renderData()}</div>
+			<div>
+				<Header3 paraColor={colors.black}>Example of fetched state</Header3>
+				<Paragraph>{this.renderData()}</Paragraph>
+			</div>
 		);
 	}
 };

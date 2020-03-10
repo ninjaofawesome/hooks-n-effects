@@ -19,22 +19,28 @@ export const CodeBlockCode = styled.code`
 	border-radius: ${sizes.xsmall}
 	overflow: hidden;
 	overflow-x: auto;
+	margin-top: 0;
 	@media ${device.desktopL} {
 	  width: 750px;
+	  margin-top: ${sizes.small};
 	}
 	@media ${device.desktop} {
 	  width: 750px;
+	  margin-top: ${sizes.small};
 	}
 	@media ${device.laptopL} { 
 	  width: 600px;
+	  margin-top: ${sizes.small};
 	}
 
 	@media ${device.laptop} { 
 	  width: 500px;
+	  margin-top: ${sizes.small};
 	}
 
 	@media ${device.tablet} { 
 	  width: 450px;
+	  margin-top: ${sizes.small};
 	}
 `;
 
