@@ -23,7 +23,7 @@ const UseEffectRow = () => (
 		        <Paragraph>Here's how it works under the hood.</Paragraph>
 		        <CodeBlock 
 		            children={`
-		            	const UseEffect = () => {
+		            	const UseEffectList = () => {
 		                	const [listData, setListData] = useState([]);
 
 		                	useEffect(() => {
